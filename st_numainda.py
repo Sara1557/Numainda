@@ -15,7 +15,7 @@ if "thread_id" not in st.session_state:
 st.set_page_config(page_title="Numainda", page_icon=":speech_balloon:")
 
 st.title("Numainda",)
-st.image('Numainda no BG Logo.png')
+# st.image('Numainda no BG Logo.png')
 st.write("A knowledge bot designed to engage and educate on Pakistan's rich legal and parliamentary heritage.")
 st.markdown("Built by [Code for Pakistan](https://codeforpakistan.org)")
 st.markdown("""*Things You Can Ask Me:*
@@ -40,7 +40,7 @@ if st.button("Start Chat"):
 
 if st.session_state.start_chat:
     if "openai_model" not in st.session_state:
-        st.session_state.openai_model = "gpt-4-1106-preview"
+        st.session_state.openai_model = "gpt-4o"
     if "messages" not in st.session_state:
         st.session_state.messages = []
     
